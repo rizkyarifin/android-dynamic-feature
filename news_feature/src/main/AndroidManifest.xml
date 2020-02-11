@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.sample.news_feature">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <dist:module
+        dist:instant="false"
+        dist:onDemand="true"
+        dist:title="@string/title_news_feature">
+        <dist:fusing dist:include="true" />
+    </dist:module>
+
+    <application android:name=".App">
+        <activity android:name=".NewsLoaderActivity">
+        </activity>
+    </application>
+</manifest>
+
